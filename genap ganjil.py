@@ -2,7 +2,7 @@
 bilangan = int(input("Masukkan bilangan: "))
 
 #menentukan ganjil genap
-def cek_bilangan(bilangan): 
+def cek_bilangan(bilangan):
     if bilangan % 2 == 0:
         print(f"{bilangan} adalah bilangan genap")
     else:
