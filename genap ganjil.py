@@ -2,10 +2,12 @@
 bilangan = int(input("Masukkan bilangan: "))
 
 #menentukan ganjil genap
-if bilangan % 2 == 0:
-    print(f"{bilangan} adalah bilangan genap")
-else:
-    print(f"{bilangan} adalah bilangan ganjil")
+def cek_bilangan(bilangan):
+    if bilangan % 2 == 0:
+        print(f"{bilangan} adalah bilangan genap")
+    else:
+        print(f"{bilangan} adalah bilangan ganjil")
+    return bilangan
 
 #mengalikan bilangan setelahnya
 bilangan_setelahnya = bilangan+1
