@@ -1,0 +1,18 @@
+# input bilangan
+bilangan = int(input("Masukkan bilangan: "))
+
+# menentukan ganjil genap
+def cek_bilangan(bilangan):
+    if bilangan % 2 == 0:
+        return "genap"
+    else:
+        return "ganjil"
+
+# mengalikan bilangan setelahnya
+bilangan_setelahnya = bilangan + 1
+hasil = bilangan * bilangan_setelahnya
+
+# menentukan dan menampilkan hasil
+jenis_bilangan = cek_bilangan(bilangan)
+print(f"{bilangan} adalah bilangan {jenis_bilangan}")
+print(f"Hasil perkalian dari {bilangan} dengan bilangan setelahnya ({bilangan_setelahnya}) adalah {hasil}")
